@@ -18,6 +18,35 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Layer_1 {
+            bindings = <&tog 1>;
+            key-positions = <16 15>;
+        };
+
+        Layer_2 {
+            bindings = <&tog 2>;
+            key-positions = <19 20>;
+        };
+
+        Layer_3 {
+            bindings = <&tog 3>;
+            key-positions = <14 13>;
+        };
+
+        Layer_4 {
+            bindings = <&tog 4>;
+            key-positions = <21 22>;
+        };
+
+        Layer_5 {
+            bindings = <&tog 5>;
+            key-positions = <16 15 14>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -30,10 +59,10 @@
 
             display-name = "Base";
             bindings = <
-&kp LC(C)  &kp Q               &kp W             &mt E LEFT_ALT  &kp R               &kp T        &kp Y          &kp U                 &mt LEFT_ALT I  &kp O             &kp P                    &kp ESCAPE
-&kp LC(X)  &mt LEFT_CONTROL A  &mt LEFT_SHIFT S  &lt 3 D         &lt 1 F             &kp G        &kp H          &lt 2 J               &lt 4 K         &mt LEFT_SHIFT L  &mt LEFT_CONTROL PERIOD  &kp F10
-&kp LC(V)  &kp Z               &kp X             &kp C           &kp V               &kp B        &kp N          &kp M                 &kp COMMA       &kp MINUS         &kp EXCLAMATION          &kp DELETE
-                                                 &kp LGUI        &mt TAB LEFT_SHIFT  &kp SPACE    &kp BACKSPACE  &mt ENTER LEFT_SHIFT  &kp LA(GRAVE)
+&kp LC(C)  &kp Q               &kp W             &mt E LEFT_ALT   &kp R               &kp T        &kp Y          &kp U                 &mt LEFT_ALT I  &kp O             &kp P                    &kp ESCAPE
+&kp LC(X)  &mt LEFT_CONTROL A  &mt LEFT_SHIFT S  &mt LC(RS(S)) D  &mt LC(S) F         &kp G        &kp H          &mt F10 J             &mt F7 K        &mt LEFT_SHIFT L  &mt LEFT_CONTROL PERIOD  &kp LC(Z)
+&kp LC(V)  &kp Z               &kp X             &kp C            &kp V               &kp B        &kp N          &kp M                 &kp COMMA       &kp MINUS         &kp EXCLAMATION          &kp DELETE
+                                                 &kp LGUI         &mt TAB LEFT_SHIFT  &kp SPACE    &kp BACKSPACE  &mt ENTER LEFT_SHIFT  &kp LA(GRAVE)
             >;
         };
 
@@ -57,7 +86,7 @@
             display-name = "cursor";
             bindings = <
 &trans  &none   &none           &kp UP_ARROW    &kp DLLR         &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &trans
+&trans  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &trans
 &trans  &trans  &trans          &trans          &trans           &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &trans
                                 &trans          &trans           &trans       &trans     &trans     &trans
             >;
@@ -89,10 +118,18 @@
             >;
         };
 
+        layer_5 {
+            display-name = "misc";
+            bindings = <
+&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
+&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
+                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+            >;
+        };
+
         extra_1 { status = "reserved"; };
 
         extra_2 { status = "reserved"; };
-
-        extra_3 { status = "reserved"; };
     };
 };
