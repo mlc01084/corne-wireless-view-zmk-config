@@ -10,11 +10,39 @@
 
 / {
     macros {
-        henkan: henkan {
+        marukakko: henkan {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(GRAVE)>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;
             label = "HENKAN";
+        };
+
+        kagikakko: kagikakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET>;
+            label = "KAGIKAKKO";
+        };
+
+        kunokakko: kunokakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN &kp GREATER_THAN>;
+            label = "KUNOKAKKO";
+        };
+
+        matomekakko: matomekakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE>;
+            label = "MATOMEKAKKO";
+        };
+
+        nakaguro: nakaguro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp A &kp K &kp A &kp G &kp U &kp R &kp O &kp SPACE>;
+            label = "NAKAGURO";
         };
     };
 
@@ -90,10 +118,10 @@
         layer_2 {
             display-name = "cursor";
             bindings = <
-&trans  &none  &none           &kp UP_ARROW    &none            &none     &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
-&trans  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &trans
-&trans  &none  &none           &none           &none            &none     &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &trans
-                               &trans          &trans           &trans    &trans     &trans     &trans
+&trans  &kp F1          &kp F2          &kp UP_ARROW    &kp F3           &kp F4     &kp F11  &kp F12             &kp LG(UP_ARROW)    &kp F13              &kp F14         &trans
+&trans  &kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F10    &kp F15  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp LEFT_SHIFT  &trans
+&trans  &kp F5          &kp F6          &kp F7          &kp F8           &kp F9     &kp F16  &kp F17             &kp F18             &kp F19              &kp F20         &trans
+                                        &trans          &trans           &trans     &trans   &trans              &trans
             >;
         };
 
@@ -104,12 +132,12 @@
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "BT";
+            display-name = "sign";
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&trans  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
+                                    &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
             >;
         };
 
