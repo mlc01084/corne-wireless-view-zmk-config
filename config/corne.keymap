@@ -80,20 +80,20 @@
 
             display-name = "numbers";
             bindings = <
-&trans  &none      &none            &kp MINUS  &none   &none     &kp UNDERSCORE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp CARET     &trans
-&trans  &kp SLASH  &kp KP_MULTIPLY  &kp PLUS   &trans  &none     &kp MINUS       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &trans
-&trans  &none      &none            &kp EQUAL  &none   &none     &kp PERIOD      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp COMMA     &trans
-                                    &trans     &trans  &trans    &trans          &trans        &trans
+&trans  &kp CARET     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp UNDERSCORE    &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans  &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS         &kp MINUS       &kp SLASH             &kp PLUS               &kp KP_MULTIPLY   &kp EQUAL          &trans
+&trans  &kp COMMA     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PERIOD        &kp PERIOD      &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
+                                    &trans        &trans        &trans            &trans          &trans                &trans
             >;
         };
 
         layer_2 {
             display-name = "cursor";
             bindings = <
-&trans  &none   &none           &kp UP_ARROW    &kp DLLR         &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
-&trans  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &trans
-&trans  &trans  &trans          &trans          &trans           &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &trans
-                                &trans          &trans           &trans       &trans     &trans     &trans
+&trans  &none  &none           &kp UP_ARROW    &none            &none     &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
+&trans  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &trans
+&trans  &none  &none           &none           &none            &none     &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &trans
+                               &trans          &trans           &trans    &trans     &trans     &trans
             >;
         };
 
