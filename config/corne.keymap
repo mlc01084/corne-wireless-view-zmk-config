@@ -56,27 +56,27 @@
 
         Layer_3 {
             bindings = <&tog 3>;
-            key-positions = <19 20>;
+            key-positions = <14 13>;
         };
 
         Layer_2 {
             bindings = <&tog 2>;
-            key-positions = <14 13>;
+            key-positions = <14 15>;
         };
 
         Layer_4 {
             bindings = <&tog 4>;
-            key-positions = <21 22>;
+            key-positions = <16 15 14>;
         };
 
         Layer_5 {
             bindings = <&tog 5>;
-            key-positions = <16 15 14>;
+            key-positions = <15 14 13>;
         };
 
         Layer_0 {
             bindings = <&tog 0>;
-            key-positions = <15 14>;
+            key-positions = <15 14 16 13>;
         };
     };
 
@@ -134,10 +134,10 @@
 
             display-name = "sign";
             bindings = <
-&trans  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                    &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&trans  &kp INT_YEN  &kp N2      &matomekakko  &kp SINGLE_QUOTE  &kp COLON        &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &trans
+&trans  &kunokakko   &kagikakko  &marukakko    &kp QUESTION      &kp AT_SIGN      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
+&trans  &kp PERCENT  &kp TILDE   &kp HASH      &nakaguro         &kp SEMICOLON    &trans    &trans    &trans    &trans     &trans  &trans
+                                 &kp LGUI      &trans            &kp SPACE        &kp RET   &trans    &kp RALT
             >;
         };
 
