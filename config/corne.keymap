@@ -26,13 +26,13 @@
             key-positions = <16 15>;
         };
 
-        Layer_2 {
-            bindings = <&tog 2>;
+        Layer_3 {
+            bindings = <&tog 3>;
             key-positions = <19 20>;
         };
 
-        Layer_3 {
-            bindings = <&tog 3>;
+        Layer_2 {
+            bindings = <&tog 2>;
             key-positions = <14 13>;
         };
 
@@ -80,10 +80,10 @@
 
             display-name = "numbers";
             bindings = <
-&trans  &kp CARET     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp UNDERSCORE    &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans  &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS         &kp MINUS       &kp SLASH             &kp PLUS               &kp KP_MULTIPLY   &kp EQUAL          &trans
-&trans  &kp COMMA     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PERIOD        &kp PERIOD      &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
-                                    &trans        &trans        &trans            &trans          &trans                &trans
+&trans  &kp CARET     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp UNDERSCORE    &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans  &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS         &kp PERCENT    &kp SLASH             &kp PLUS               &kp KP_MULTIPLY   &kp EQUAL          &trans
+&trans  &kp COMMA     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PERIOD        &kp PIPE       &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
+                                    &trans        &trans        &trans            &trans         &trans                &trans
             >;
         };
 
