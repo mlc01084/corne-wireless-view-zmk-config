@@ -44,6 +44,13 @@
             bindings = <&kp N &kp A &kp K &kp A &kp G &kp U &kp R &kp O &kp SPACE>;
             label = "NAKAGURO";
         };
+
+        dotcom: dotcom {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp DOT &kp C &kp O &kp M>;
+            label = "DOTCOM";
+        };
     };
 
     combos {
@@ -134,10 +141,10 @@
 
             display-name = "sign";
             bindings = <
-&trans  &kp INT_YEN  &kp N2      &matomekakko  &kp SINGLE_QUOTE  &kp COLON        &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &trans
-&trans  &kunokakko   &kagikakko  &marukakko    &kp QUESTION      &kp AT_SIGN      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&trans  &kp PERCENT  &kp TILDE   &kp HASH      &nakaguro         &kp SEMICOLON    &trans    &trans    &trans    &trans     &trans  &trans
-                                 &kp LGUI      &trans            &kp SPACE        &kp RET   &trans    &kp RALT
+&trans  &kp INT_YEN  &kp N2      &matomekakko  &kp SINGLE_QUOTE   &kp COLON        &dotcom      &kp LESS_THAN         &kp GREATER_THAN       &kp AMPERSAND     &kp PERCENT        &trans
+&trans  &kunokakko   &kagikakko  &marukakko    &kp QUESTION       &kp AT_SIGN      &nakaguro    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans  &kp HASH     &kp TILDE   &nakaguro     &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp AT_SIGN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR        &kp PIPE           &trans
+                                 &kp LGUI      &trans             &kp SPACE        &kp RET      &trans                &kp RALT
             >;
         };
 
