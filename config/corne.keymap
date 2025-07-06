@@ -45,6 +45,11 @@
             bindings = <&tog 5>;
             key-positions = <16 15 14>;
         };
+
+        Layer_0 {
+            bindings = <&tog 0>;
+            key-positions = <15 14>;
+        };
     };
 
     keymap {
@@ -60,7 +65,7 @@
             display-name = "Base";
             bindings = <
 &kp LC(C)  &kp Q               &kp W             &mt E LEFT_ALT   &kp R               &kp T        &kp Y          &kp U                 &mt LEFT_ALT I  &kp O             &kp P                    &kp ESCAPE
-&kp LC(X)  &mt LEFT_CONTROL A  &mt LEFT_SHIFT S  &mt LC(RS(S)) D  &mt LC(S) F         &kp G        &kp H          &mt F10 J             &mt F7 K        &mt LEFT_SHIFT L  &mt LEFT_CONTROL PERIOD  &kp LC(Z)
+&kp LC(X)  &mt LEFT_CONTROL A  &mt LEFT_SHIFT S  &mt LC(RS(S)) D  &mt LC(S) F         &kp G        &kp H          &mt LC(Z) J           &mt F7 K        &mt LEFT_SHIFT L  &mt LEFT_CONTROL PERIOD  &kp F10
 &kp LC(V)  &kp Z               &kp X             &kp C            &kp V               &kp B        &kp N          &kp M                 &kp COMMA       &kp MINUS         &kp EXCLAMATION          &kp DELETE
                                                  &kp LGUI         &mt TAB LEFT_SHIFT  &kp SPACE    &kp BACKSPACE  &mt ENTER LEFT_SHIFT  &kp LA(GRAVE)
             >;
