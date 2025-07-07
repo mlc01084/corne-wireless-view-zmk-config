@@ -99,10 +99,10 @@
 
             display-name = "Base";
             bindings = <
-&kp LC(C)  &kp Q               &kp W             &mt E LEFT_ALT   &kp R               &kp T        &kp Y          &kp U                 &mt LEFT_ALT I  &kp O             &kp P                    &kp ESCAPE
-&kp LC(X)  &mt LEFT_CONTROL A  &mt LEFT_SHIFT S  &mt LC(RS(S)) D  &mt LC(S) F         &kp G        &kp H          &mt LC(Z) J           &mt F7 K        &mt LEFT_SHIFT L  &mt LEFT_CONTROL PERIOD  &kp F10
-&kp LC(V)  &kp Z               &kp X             &kp C            &kp V               &kp B        &kp N          &kp M                 &kp COMMA       &kp MINUS         &kp EXCLAMATION          &kp DELETE
-                                                 &kp LGUI         &mt TAB LEFT_SHIFT  &kp SPACE    &kp BACKSPACE  &mt ENTER LEFT_SHIFT  &kp LA(GRAVE)
+&kp LC(C)  &kp Q               &kp L             &mt LEFT_ALT U   &kp F               &kp PERIOD    &kp EXCLAMATION  &kp W                 &mt LEFT_ALT R  &kp Y             &kp P               &kp ESCAPE
+&kp LC(X)  &mt LEFT_CONTROL E  &mt LEFT_SHIFT I  &mt LC(RS(S)) A  &mt LC(S) O         &kp MINUS     &kp K            &mt LC(Z) T           &mt F7 N        &mt LEFT_SHIFT S  &mt LEFT_CONTROL H  &kp F10
+&kp LC(V)  &kp Z               &kp X             &kp C            &kp V               &kp COMMA     &kp G            &kp D                 &kp M           &kp J             &kp B               &kp DELETE
+                                                 &kp LGUI         &mt TAB LEFT_SHIFT  &kp SPACE     &kp BACKSPACE    &mt ENTER LEFT_SHIFT  &kp LA(GRAVE)
             >;
         };
 
@@ -141,20 +141,20 @@
 
             display-name = "sign";
             bindings = <
-&trans  &kp INT_YEN  &kp N2      &matomekakko  &kp SINGLE_QUOTE   &kp COLON        &dotcom      &kp LESS_THAN         &kp GREATER_THAN       &kp AMPERSAND     &kp PERCENT        &trans
+&trans  &kp INT_YEN  &kp HASH    &matomekakko  &kp SINGLE_QUOTE   &kp COLON        &dotcom      &kp LESS_THAN         &kp GREATER_THAN       &kp AMPERSAND     &kp PERCENT        &trans
 &trans  &kunokakko   &kagikakko  &marukakko    &kp QUESTION       &kp AT_SIGN      &nakaguro    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans  &kp HASH     &kp TILDE   &nakaguro     &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp AT_SIGN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR        &kp PIPE           &trans
-                                 &kp LGUI      &trans             &kp SPACE        &kp RET      &trans                &kp RALT
+&trans  &kp GRAVE    &kp TILDE   &nakaguro     &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp AT_SIGN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR        &kp PIPE           &trans
+                                 &trans        &trans             &trans           &trans       &trans                &trans
             >;
         };
 
         layer_4 {
             display-name = "misc";
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&trans  &kp C_VOLUME_UP    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none               &none     &kp N7    &kp N8  &kp N9     &kp N0  &kp BSPC
+&trans  &kp C_VOLUME_DOWN  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR    &kp C_SLEEP_MODE    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans  &kp K_MUTE         &trans        &trans        &trans        &trans              &trans    &trans    &trans  &trans     &trans  &trans
+                                         &trans        &trans        &trans              &trans    &trans    &trans
             >;
         };
 
