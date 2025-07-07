@@ -57,27 +57,27 @@
         compatible = "zmk,combos";
 
         Layer_1 {
-            bindings = <&tog 1>;
+            bindings = <&to 1>;
             key-positions = <16 15>;
         };
 
         Layer_3 {
-            bindings = <&tog 3>;
+            bindings = <&to 3>;
             key-positions = <14 13>;
         };
 
         Layer_2 {
-            bindings = <&tog 2>;
+            bindings = <&to 2>;
             key-positions = <14 15>;
         };
 
         Layer_4 {
-            bindings = <&tog 4>;
+            bindings = <&to 4>;
             key-positions = <16 15 14>;
         };
 
         Layer_0 {
-            bindings = <&tog 0>;
+            bindings = <&to 0>;
             key-positions = <15 14 16 13>;
         };
     };
