@@ -8,6 +8,12 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+&mt {
+    tapping-term-ms = <250>;
+    quick-tap-ms = <150>;
+    flavor = "tap-preferred";
+};
+
 / {
     macros {
         marukakko: henkan {
@@ -80,6 +86,16 @@
             bindings = <&to 0>;
             key-positions = <15 14 16 13>;
         };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <20 21>;
+        };
+
+        question {
+            bindings = <&kp QUESTION>;
+            key-positions = <19 20>;
+        };
     };
 
     behaviors {
@@ -91,7 +107,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "tap-preferred";
-            quick-tap-ms = <150>;
+            quick-tap-ms = <220>;
         };
     };
 
@@ -107,7 +123,7 @@
 
             display-name = "Base";
             bindings = <
-&kp LC(C)  &mt LS(LG(S)) Q     &mt LC(S) L       &mt LEFT_ALT U  &mt LC(Z) F         &kp PERIOD    &kp EXCLAMATION  &kp W                 &mt LEFT_ALT R  &kp Y             &kp P               &kp ESCAPE
+&kp LC(C)  &kp Q               &kp L             &mt LEFT_ALT U  &kp F               &kp PERIOD    &kp EXCLAMATION  &kp W                 &mt LEFT_ALT R  &kp Y             &kp P               &kp ESCAPE
 &kp LC(X)  &mt LEFT_CONTROL E  &mt LEFT_SHIFT I  &kp A           &kp O               &kp MINUS     &kp K            &kp T                 &kp N           &mt LEFT_SHIFT S  &mt LEFT_CONTROL H  &kp F10
 &kp LC(V)  &kp Z               &kp X             &kp C           &kp V               &kp COMMA     &kp G            &kp D                 &kp M           &kp J             &kp B               &kp DELETE
                                                  &kp LGUI        &mt LEFT_SHIFT TAB  &kp SPACE     &kp BACKSPACE    &mt LEFT_SHIFT ENTER  &kp LA(GRAVE)
@@ -133,10 +149,10 @@
         layer_2 {
             display-name = "cursor";
             bindings = <
-&trans  &kp F1          &kp F2          &kp UP_ARROW    &kp F3           &kp F4     &kp F11  &kp F12             &kp LG(UP_ARROW)    &kp F13              &kp F14         &trans
-&trans  &kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F10    &kp F15  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp LEFT_SHIFT  &trans
-&trans  &kp F5          &kp F6          &kp F7          &kp F8           &kp F9     &kp F16  &kp F17             &kp F18             &kp F19              &kp F20         &trans
-                                        &trans          &trans           &trans     &trans   &trans              &trans
+&trans  &kp F1          &kp F2          &kp UP_ARROW    &kp F3           &kp F4     &kp F11        &kp F12             &kp LG(UP_ARROW)    &kp F13              &kp F14    &trans
+&trans  &kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F10    &kp PAGE_UP    &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp LCTRL  &trans
+&trans  &kp F5          &kp F6          &kp F7          &kp F8           &kp F9     &kp PAGE_DOWN  &kp F17             &kp F18             &kp F19              &kp F20    &trans
+                                        &trans          &trans           &trans     &trans         &trans              &trans
             >;
         };
 
