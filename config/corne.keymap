@@ -54,47 +54,89 @@
         dotcom: dotcom {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp DOT &kp C &kp O &kp M>;
+            bindings = <&kp DOT &kp C &kp O &kp M>;
             label = "DOTCOM";
+        };
+
+        ryo: ryo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp Y &kp O &kp DOT &kp H &kp A &kp S &kp H &kp I &kp M &kp O &kp T &kp O &kp AT &kp N &kp T &kp T &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
+            label = "RYO";
         };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        Layer_1 {
+        numbers {
             bindings = <&to 1>;
             key-positions = <3 4>;
         };
 
-        Layer_3 {
+        sign {
             bindings = <&to 3>;
             key-positions = <3 2>;
         };
 
-        Layer_2 {
+        cursor {
             bindings = <&to 2>;
             key-positions = <27 28>;
         };
 
-        Layer_4 {
+        misc {
             bindings = <&to 4>;
             key-positions = <1 4>;
         };
 
-        Layer_0 {
+        base {
             bindings = <&to 0>;
             key-positions = <15 14 16 13>;
         };
 
         at {
             bindings = <&kp AT>;
-            key-positions = <7 8>;
+            key-positions = <19 21>;
         };
 
         question {
             bindings = <&kp QUESTION>;
+            key-positions = <19 20 21>;
+        };
+
+        nakaguro {
+            bindings = <&nakaguro>;
+            key-positions = <20 21 22 19 20 21 22>;
+        };
+
+        dotcom {
+            bindings = <&dotcom>;
+            key-positions = <7 10>;
+        };
+
+        ryo {
+            bindings = <&ryo>;
+            key-positions = <7 9>;
+        };
+
+        marukakko {
+            bindings = <&marukakko>;
+            key-positions = <19 20>;
+        };
+
+        kunokakko {
+            bindings = <&kunokakko>;
+            key-positions = <7 8>;
+        };
+
+        matomekakko {
+            bindings = <&matomekakko>;
             key-positions = <31 32>;
+        };
+
+        kagikakko {
+            bindings = <&kagikakko>;
+            key-positions = <21 22>;
         };
     };
 
@@ -123,10 +165,10 @@
 
             display-name = "Base";
             bindings = <
-&kp LC(C)  &kp Q               &kp L             &mt LEFT_ALT U  &kp F               &kp PERIOD    &kp EXCLAMATION  &kp W                 &mt LEFT_ALT R  &kp Y             &kp P               &kp ESCAPE
-&kp LC(X)  &mt LEFT_CONTROL E  &mt LEFT_SHIFT I  &kp A           &kp O               &kp MINUS     &kp K            &kp T                 &kp N           &mt LEFT_SHIFT S  &mt LEFT_CONTROL H  &kp F10
-&kp LC(V)  &kp Z               &kp X             &kp C           &kp V               &kp COMMA     &kp G            &kp D                 &kp M           &kp J             &kp B               &kp DELETE
-                                                 &kp LGUI        &mt LEFT_SHIFT TAB  &kp SPACE     &kp BACKSPACE    &mt LEFT_SHIFT ENTER  &kp LG(SPACE)
+&kp LC(C)  &kp Q               &kp L             &mt LEFT_ALT U  &kp F      &mt COLON PERIOD       &kp EXCLAMATION  &kp W                 &mt LEFT_ALT R          &kp Y             &kp P               &kp ESCAPE
+&kp LC(X)  &mt LEFT_CONTROL E  &mt LEFT_SHIFT I  &kp A           &kp O      &mt TILDE MINUS        &kp K            &kp T                 &kp N                   &mt LEFT_SHIFT S  &mt LEFT_CONTROL H  &kp F10
+&kp LC(V)  &kp Z               &kp X             &kp C           &kp V      &mt SEMICOLON COMMA    &kp G            &kp D                 &kp M                   &kp J             &kp B               &kp DELETE
+                                                 &mt F19 F20     &lt 2 TAB  &kp SPACE              &kp BACKSPACE    &mt LEFT_SHIFT ENTER  &mt LEFT_WIN LC(SPACE)
             >;
         };
 
@@ -139,20 +181,20 @@
 
             display-name = "numbers";
             bindings = <
-&trans  &kp CARET     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp UNDERSCORE    &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans  &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS         &kp PERCENT    &kp SLASH             &kp PLUS               &kp KP_MULTIPLY   &kp EQUAL          &trans
-&trans  &kp COMMA     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD        &kp PIPE       &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
-                                    &trans        &trans        &trans            &trans         &trans                &trans
+&trans  &kp DEL        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp UNDERSCORE      &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &trans
+&trans  &kp NUMBER_0   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kt MINUS           &kp PERCENT    &kp SLASH             &kp PLUS               &mt CARET KP_MULTIPLY  &kp EQUAL          &trans
+&trans  &kp BACKSPACE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mt COMMA PERIOD    &kp PIPE       &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACE         &kp RIGHT_BRACE    &trans
+                                     &trans        &trans        &trans              &trans         &trans                &trans
             >;
         };
 
         layer_2 {
             display-name = "cursor";
             bindings = <
-&trans  &kp F1          &kp F2          &kp UP_ARROW    &kp F3           &kp F4     &kp F11        &kp F12             &kp LG(UP_ARROW)    &kp F13              &kp F14    &trans
-&trans  &kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F10    &kp PAGE_UP    &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp LCTRL  &trans
-&trans  &kp F5          &kp F6          &kp F7          &kp F8           &kp F9     &kp PAGE_DOWN  &kp F17             &kp F18             &kp F19              &kp F20    &trans
-                                        &trans          &trans           &trans     &trans         &trans              &trans
+&trans  &kp LC(A)               &kp LC(Z)           &kp LS(UP_ARROW)    &kp LC(Y)            &kp F2                     &kp F11        &kp F12         &kp UP_ARROW    &kp F13          &kp F14              &trans
+&trans  &kp LC(LS(LEFT_ARROW))  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp LC(LS(RIGHT_ARROW))    &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mt LEFT_SHIFT HOME  &trans
+&trans  &kp LG(V)               &kp LS(LC(V))       &kp F7              &kp F8               &kp F9                     &kp PAGE_DOWN  &kp LC(ENTER)   &kp LS(ENTER)   &kp LA(ENTER)    &kp END              &trans
+                                                    &trans              &trans               &trans                     &trans         &trans          &trans
             >;
         };
 
@@ -175,10 +217,10 @@
         layer_4 {
             display-name = "misc";
             bindings = <
-&trans  &kp C_VOLUME_UP    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none               &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp C_VOLUME_DOWN  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR    &kp C_SLEEP_MODE    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp K_MUTE         &none         &none         &none         &none               &trans  &trans  &trans  &trans  &trans  &trans
-                                         &trans        &trans        &trans              &trans  &trans  &trans
+&trans  &kp C_VOLUME_UP    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none               &kp F13  &kp F7  &kp F8  &kp F9  &kp F16  &trans
+&trans  &kp C_VOLUME_DOWN  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR    &kp C_SLEEP_MODE    &kp F12  &kp F4  &kp F5  &kp F6  &kp F15  &trans
+&trans  &kp K_MUTE         &none         &none         &none         &none               &kp F11  &kp F1  &kp F2  &kp F3  &kp F14  &trans
+                                         &trans        &trans        &trans              &trans   &trans  &trans
             >;
         };
 
