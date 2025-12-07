@@ -19,28 +19,28 @@
         marukakko: henkan {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
             label = "HENKAN";
         };
 
         kagikakko: kagikakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
             label = "KAGIKAKKO";
         };
 
         kunokakko: kunokakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LESS_THAN &kp GREATER_THAN>;
+            bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT_ARROW>;
             label = "KUNOKAKKO";
         };
 
         matomekakko: matomekakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW>;
             label = "MATOMEKAKKO";
         };
 
@@ -126,7 +126,7 @@
 &kp LC(C)  &kp Q               &kp L             &mt LEFT_ALT U  &kp F               &kp PERIOD    &kp EXCLAMATION  &kp W                 &mt LEFT_ALT R  &kp Y             &kp P               &kp ESCAPE
 &kp LC(X)  &mt LEFT_CONTROL E  &mt LEFT_SHIFT I  &kp A           &kp O               &kp MINUS     &kp K            &kp T                 &kp N           &mt LEFT_SHIFT S  &mt LEFT_CONTROL H  &kp F10
 &kp LC(V)  &kp Z               &kp X             &kp C           &kp V               &kp COMMA     &kp G            &kp D                 &kp M           &kp J             &kp B               &kp DELETE
-                                                 &kp LGUI        &mt LEFT_SHIFT TAB  &kp SPACE     &kp BACKSPACE    &mt LEFT_SHIFT ENTER  &kp LA(GRAVE)
+                                                 &kp LGUI        &mt LEFT_SHIFT TAB  &kp SPACE     &kp BACKSPACE    &mt LEFT_SHIFT ENTER  &kp LG(SPACE)
             >;
         };
 
@@ -139,9 +139,9 @@
 
             display-name = "numbers";
             bindings = <
-&trans  &kp CARET     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp UNDERSCORE    &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans  &kp CARET     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp UNDERSCORE    &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
 &trans  &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS         &kp PERCENT    &kp SLASH             &kp PLUS               &kp KP_MULTIPLY   &kp EQUAL          &trans
-&trans  &kp COMMA     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PERIOD        &kp PIPE       &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
+&trans  &kp COMMA     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD        &kp PIPE       &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
                                     &trans        &trans        &trans            &trans         &trans                &trans
             >;
         };
