@@ -165,10 +165,10 @@
 
             display-name = "Base";
             bindings = <
-&kp LC(C)  &kp Q               &kp L             &mt LEFT_ALT U  &kp F      &mt COLON PERIOD       &kp EXCLAMATION  &kp W                 &mt LEFT_ALT R          &kp Y             &kp P               &kp ESCAPE
-&kp LC(X)  &mt LEFT_CONTROL E  &mt LEFT_SHIFT I  &kp A           &kp O      &mt TILDE MINUS        &kp K            &kp T                 &kp N                   &mt LEFT_SHIFT S  &mt LEFT_CONTROL H  &kp F10
-&kp LC(V)  &kp Z               &kp X             &kp C           &kp V      &mt SEMICOLON COMMA    &kp G            &kp D                 &kp M                   &kp J             &kp B               &kp DELETE
-                                                 &mt F19 F20     &lt 2 TAB  &kp SPACE              &kp BACKSPACE    &mt LEFT_SHIFT ENTER  &mt LEFT_WIN LC(SPACE)
+&mt LC(LS(ESC)) LC(C)  &mt LC(Y) Q         &mt LC(A) L       &mt LEFT_ALT U  &mt LS(LEFT_ALT) F  &mt COLON PERIOD       &mt DOUBLE_QUOTES EXCLAMATION  &mt LC(F) W           &mt LEFT_ALT R          &kp Y             &mt LC(P) P         &kp ESC
+&mt LG(LS(S)) LC(X)    &mt LEFT_CONTROL E  &mt LEFT_SHIFT I  &kp A           &kp O               &mt TILDE MINUS        &mt LG(S) K                    &kp T                 &kp N                   &mt LEFT_SHIFT S  &mt LEFT_CONTROL H  &mt LA(F4) F10
+&mt LC(LS(V)) LC(V)    &mt LC(Z) Z         &mt LG(V) X       &mt LS(F10) C   &mt LC(S) V         &mt SEMICOLON COMMA    &mt SINGLE_QUOTE G             &kp D                 &kp M                   &kp J             &mt LC(LA(DEL)) B   &kp DELETE
+                                                             &lt 4 F19       &lt 2 TAB           &kp SPACE              &kp BACKSPACE                  &mt LEFT_SHIFT ENTER  &mt LEFT_WIN LC(SPACE)
             >;
         };
 
@@ -191,10 +191,10 @@
         layer_2 {
             display-name = "cursor";
             bindings = <
-&trans  &kp LC(A)               &kp LC(Z)           &kp LS(UP_ARROW)    &kp LC(Y)            &kp F2                     &kp F11        &kp F12         &kp UP_ARROW    &kp F13          &kp F14              &trans
-&trans  &kp LC(LS(LEFT_ARROW))  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp LC(LS(RIGHT_ARROW))    &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mt LEFT_SHIFT HOME  &trans
-&trans  &kp LG(V)               &kp LS(LC(V))       &kp F7              &kp F8               &kp F9                     &kp PAGE_DOWN  &kp LC(ENTER)   &kp LS(ENTER)   &kp LA(ENTER)    &kp END              &trans
-                                                    &trans              &trans               &trans                     &trans         &trans          &trans
+&trans  &kp LC(Y)                      &kp LC(A)       &kp UP_ARROW     &kp LC(Y)        &kp F2                     &kp LC(LEFT_ARROW)  &kp LS(LEFT_ARROW)  &kp UP_ARROW    &kp LS(RIGHT_ARROW)  &kp LC(RIGHT_ARROW)  &trans
+&trans  &mt LEFT_SHIFT LS(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp LC(LS(RIGHT_ARROW))    &kp PAGE_UP         &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &mt LEFT_SHIFT HOME  &trans
+&trans  &kp LC(Z)                      &kp LG(V)       &mt LEFT_ALT F7  &kp F8           &kp F9                     &kp PAGE_DOWN       &kp LC(ENTER)       &kp LS(ENTER)   &kp LA(ENTER)        &kp END              &trans
+                                                       &trans           &trans           &trans                     &trans              &trans              &trans
             >;
         };
 
@@ -217,10 +217,10 @@
         layer_4 {
             display-name = "misc";
             bindings = <
-&trans  &kp C_VOLUME_UP    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none               &kp F13  &kp F7  &kp F8  &kp F9  &kp F16  &trans
-&trans  &kp C_VOLUME_DOWN  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR    &kp C_SLEEP_MODE    &kp F12  &kp F4  &kp F5  &kp F6  &kp F15  &trans
-&trans  &kp K_MUTE         &none         &none         &none         &none               &kp F11  &kp F1  &kp F2  &kp F3  &kp F14  &trans
-                                         &trans        &trans        &trans              &trans   &trans  &trans
+&trans  &kp C_VOLUME_UP    &bt BT_SEL 0        &kp LS(UP_ARROW)    &bt BT_SEL 1         &bt BT_SEL 2        &kp F13  &kp F7  &kp F8  &kp F9  &kp F16  &trans
+&trans  &kp C_VOLUME_DOWN  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp C_SLEEP_MODE    &kp F12  &kp F4  &kp F5  &kp F6  &kp F15  &trans
+&trans  &kp K_MUTE         &bt BT_SEL 3        &bt BT_SEL 4        &bt BT_CLR           &bt BT_CLR_ALL      &kp F11  &kp F1  &kp F2  &kp F3  &kp F14  &trans
+                                               &trans              &trans               &trans              &trans   &trans  &trans
             >;
         };
 
