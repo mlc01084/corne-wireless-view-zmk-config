@@ -166,7 +166,7 @@
             display-name = "Base";
             bindings = <
 &mt LC(LS(ESC)) LC(C)  &mt LC(Y) Q         &mt LC(A) L       &mt LEFT_ALT U  &mt LS(LEFT_ALT) F  &mt COLON PERIOD       &mt DOUBLE_QUOTES EXCLAMATION  &mt LC(F) W           &mt LEFT_ALT R          &kp Y             &mt LC(P) P         &kp ESC
-&mt LG(LS(S)) LC(X)    &mt LEFT_CONTROL E  &mt LEFT_SHIFT I  &lt 3 A         &kp O               &mt TILDE MINUS        &mt LG(S) K                    &kp T                 &kp N                   &mt LEFT_SHIFT S  &mt LEFT_CONTROL H  &mt LA(F4) F10
+&mt LG(LS(S)) LC(X)    &mt LEFT_CONTROL E  &mt LEFT_SHIFT I  &lt 3 A         &mt F5 O            &mt TILDE MINUS        &mt LG(S) K                    &kp T                 &kp N                   &mt LEFT_SHIFT S  &mt LEFT_CONTROL H  &mt LA(F4) F10
 &mt LC(LS(V)) LC(V)    &mt LC(Z) Z         &mt LG(V) X       &mt LS(F10) C   &mt LC(S) V         &mt SEMICOLON COMMA    &mt SINGLE_QUOTE G             &kp D                 &kp M                   &kp J             &mt LC(LA(DEL)) B   &kp DELETE
                                                              &lt 4 F19       &lt 2 TAB           &lt 1 SPACE            &kp BACKSPACE                  &mt LEFT_SHIFT ENTER  &mt LEFT_WIN LC(SPACE)
             >;
@@ -181,9 +181,9 @@
 
             display-name = "numbers";
             bindings = <
-&trans  &kp DEL        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp UNDER           &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &trans
+&trans  &kp DEL        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp UNDER           &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &trans
 &trans  &kp NUMBER_0   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS           &kp PERCENT    &kp SLASH             &kp PLUS               &mt CARET KP_MULTIPLY  &kp EQUAL          &trans
-&trans  &kp BACKSPACE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mt COMMA PERIOD    &kp PIPE       &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACE         &kp RIGHT_BRACE    &trans
+&trans  &kp BACKSPACE  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &mt COMMA PERIOD    &kp PIPE       &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACE         &kp RIGHT_BRACE    &trans
                                      &trans        &trans        &trans              &trans         &trans                &trans
             >;
         };
