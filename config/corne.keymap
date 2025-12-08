@@ -61,7 +61,7 @@
         ryo: ryo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp R &kp Y &kp O &kp DOT &kp H &kp A &kp S &kp H &kp I &kp M &kp O &kp T &kp O &kp AT &kp N &kp T &kp T &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
+            bindings = <&kp R &kp Y &kp O &kp DOT &kp H &kp A &kp S &kp H &kp I &kp M &kp O &kp T &kp O &kp AT &kp N &kp T &kp T &kp DOT &kp C &kp O &kp M &kp F10>;
             label = "RYO";
         };
     };
