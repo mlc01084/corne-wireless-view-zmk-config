@@ -217,10 +217,10 @@
         layer_4 {
             display-name = "misc";
             bindings = <
-&trans  &kp C_VOLUME_UP    &bt BT_SEL 0        &kp LS(UP_ARROW)    &bt BT_SEL 1         &bt BT_SEL 2        &kp F13  &kp F7  &kp F8  &kp F9  &kp F16  &trans
-&trans  &kp C_VOLUME_DOWN  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp C_SLEEP_MODE    &kp F12  &kp F4  &kp F5  &kp F6  &kp F15  &trans
-&trans  &kp K_MUTE         &bt BT_SEL 3        &bt BT_SEL 4        &bt BT_CLR           &bt BT_CLR_ALL      &kp F11  &kp F1  &kp F2  &kp F3  &kp F14  &trans
-                                               &trans              &trans               &trans              &trans   &trans  &trans
+&trans  &kp C_VOLUME_UP    &bt BT_SEL 0    &kp UP_ARROW    &bt BT_SEL 1     &bt BT_SEL 2        &kp F13  &kp F7  &kp F8  &kp F9  &kp F16  &trans
+&trans  &kp C_VOLUME_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_SLEEP_MODE    &kp F12  &kp F4  &kp F5  &kp F6  &kp F15  &trans
+&trans  &kp K_MUTE         &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_CLR       &bt BT_CLR_ALL      &kp F11  &kp F1  &kp F2  &kp F3  &kp F14  &trans
+                                           &trans          &trans           &trans              &trans   &trans  &trans
             >;
         };
 
