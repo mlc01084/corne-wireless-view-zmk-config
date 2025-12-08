@@ -166,9 +166,9 @@
             display-name = "Base";
             bindings = <
 &mt LC(LS(ESC)) LC(C)  &mt LC(Y) Q         &mt LC(A) L       &mt LEFT_ALT U  &mt LS(LEFT_ALT) F  &mt COLON PERIOD       &mt DOUBLE_QUOTES EXCLAMATION  &mt LC(F) W           &mt LEFT_ALT R          &kp Y             &mt LC(P) P         &kp ESC
-&mt LG(LS(S)) LC(X)    &mt LEFT_CONTROL E  &mt LEFT_SHIFT I  &kp A           &kp O               &mt TILDE MINUS        &mt LG(S) K                    &kp T                 &kp N                   &mt LEFT_SHIFT S  &mt LEFT_CONTROL H  &mt LA(F4) F10
+&mt LG(LS(S)) LC(X)    &mt LEFT_CONTROL E  &mt LEFT_SHIFT I  &lt 3 A         &kp O               &mt TILDE MINUS        &mt LG(S) K                    &kp T                 &kp N                   &mt LEFT_SHIFT S  &mt LEFT_CONTROL H  &mt LA(F4) F10
 &mt LC(LS(V)) LC(V)    &mt LC(Z) Z         &mt LG(V) X       &mt LS(F10) C   &mt LC(S) V         &mt SEMICOLON COMMA    &mt SINGLE_QUOTE G             &kp D                 &kp M                   &kp J             &mt LC(LA(DEL)) B   &kp DELETE
-                                                             &lt 4 F19       &lt 2 TAB           &kp SPACE              &kp BACKSPACE                  &mt LEFT_SHIFT ENTER  &mt LEFT_WIN LC(SPACE)
+                                                             &lt 4 F19       &lt 2 TAB           &lt 1 SPACE            &kp BACKSPACE                  &mt LEFT_SHIFT ENTER  &mt LEFT_WIN LC(SPACE)
             >;
         };
 
@@ -191,10 +191,10 @@
         layer_2 {
             display-name = "cursor";
             bindings = <
-&trans  &kp LC(Y)                      &kp LC(A)       &kp UP_ARROW     &kp LC(Y)        &kp F2                     &kp LC(LEFT_ARROW)  &kp LS(LEFT_ARROW)  &kp UP_ARROW    &kp LS(RIGHT_ARROW)  &kp LC(RIGHT_ARROW)  &trans
-&trans  &mt LEFT_SHIFT LS(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp LC(LS(RIGHT_ARROW))    &kp PAGE_UP         &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &mt LEFT_SHIFT HOME  &trans
-&trans  &kp LC(Z)                      &kp LG(V)       &mt LEFT_ALT F7  &kp F8           &kp F9                     &kp PAGE_DOWN       &kp LC(ENTER)       &kp LS(ENTER)   &kp LA(ENTER)        &kp END              &trans
-                                                       &trans           &trans           &trans                     &trans              &trans              &trans
+&trans  &kp LC(Y)             &kp LC(A)           &kp LS(UP_ARROW)    &kp LC(Y)            &kp F2     &kp LC(LEFT_ARROW)  &kp LS(LEFT_ARROW)  &kp UP_ARROW    &kp LS(RIGHT_ARROW)  &kp LC(RIGHT_ARROW)  &trans
+&trans  &mt LEFT_SHIFT SPACE  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp F10    &kp PAGE_UP         &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &mt LEFT_SHIFT HOME  &trans
+&trans  &kp LC(Z)             &kp LG(V)           &mt LEFT_ALT F7     &kp F8               &kp F9     &kp PAGE_DOWN       &kp LC(ENTER)       &kp LS(ENTER)   &kp LA(ENTER)        &kp END              &trans
+                                                  &trans              &trans               &trans     &trans              &trans              &trans
             >;
         };
 
@@ -208,8 +208,8 @@
             display-name = "sign";
             bindings = <
 &trans  &kp INT_YEN  &kp HASH    &matomekakko  &kp SINGLE_QUOTE   &kp COLON        &dotcom      &kp LESS_THAN         &kp GREATER_THAN       &kp AMPERSAND     &kp PERCENT        &trans
-&trans  &kunokakko   &kagikakko  &marukakko    &kp QUESTION       &kp AT_SIGN      &nakaguro    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans  &kp GRAVE    &kp TILDE   &nakaguro     &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp AT_SIGN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR        &kp PIPE           &trans
+&trans  &kunokakko   &kagikakko  &none         &kp QUESTION       &kp AT_SIGN      &nakaguro    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans  &kp GRAVE    &kp TILDE   &marukakko    &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp AT_SIGN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR        &kp PIPE           &trans
                                  &trans        &trans             &trans           &trans       &trans                &trans
             >;
         };
